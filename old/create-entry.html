@@ -1,0 +1,410 @@
+<h1 id="page-title" class="asset-name">新しいブログ記事を作成</h1>
+
+<script type="text/javascript">
+<!--
+function entry_create_loggedin() {
+    var u = mtGetUser();
+    var loggedin = u && u.is_authenticated && u.is_author ? true : false;
+    var eid = 'logged_in';
+    conditional_block(loggedin, eid);
+    if (!loggedin) {
+        var p = document.getElementById('login_message');
+        if (!p) return;
+        if (u && !u.is_author) 
+            p.innerHTML = "ブログに投稿する前に登録を行ってください。";
+        else
+            if (u && !u.can_post)
+                p.innerHTML = "投稿する権限がありません。";
+            else
+                p.innerHTML = '<a href="javascript:void(0)" onclick="return mtSignInOnClick(\'login_message\')">サインインしてブログ記事を投稿してください。</a>';
+    } else {
+        var mt = document.getElementById('magic_token');
+        if (mt) mt.value = u.sid;
+    }
+}
+// -->
+</script>
+<div id="logged_in" style="display:none" class="inline">
+
+<form method="post" action="http://www.thumbsmate.jp/mt2/mt-cp.cgi" name="entry_form" id="create-entry-form" enctype="multipart/form-data">
+    <input type="hidden" name="__mode" value="post" />
+    <input type="hidden" name="blog_id" value="6" />
+    <input type="hidden" id="magic_token" name="magic_token" value="" />
+    
+    
+
+    
+    
+
+    
+        
+        
+    
+
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+        
+        
+        
+        
+    
+    <input type="submit" accesskey="s" name="post" id="entry-submit" value="投稿" />
+</form>
+
+</div>
+<div id="logged_in_else" style="display:none" class="inline">
+
+<p id="login_message"></p>
+
+</div>
+<script type="text/javascript">
+var is_loggedin = false;
+if ( typeof(mtGetUser) == 'undefined' )
+    is_loggedin = user ? true : false;
+else {
+    var u = mtGetUser();
+    is_loggedin = u && u.name ? true : false;
+}
+entry_create_loggedin(is_loggedin ? 1 : 0, 'logged_in');
+</script>
+
+
+<script type="text/javascript">
+<!--
+mtAttachEvent('usersignin', entry_create_loggedin);
+//-->
+</script>
+
+
+
+
+

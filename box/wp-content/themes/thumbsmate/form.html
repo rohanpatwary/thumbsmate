@@ -1,0 +1,28 @@
+<table id="touroku_table"><tr><th scope="row">会社名</th>
+<td>[text company]</td></tr>
+<tr>
+<th scope="row">登録者名<span class="hissu">(必須)</span></th>
+<td>[text* your-name] </td>
+</tr>
+<tr>
+<th scope="row">電話番号<span class="hissu">(必須)</span></th>
+<td>[text* your-tel] </td>
+</tr>
+<th scope="row">メールアドレス <span class="hissu">(必須)</span></th>
+<td>[email* your-email] </td>
+</tr>
+
+<tr><th scope="row">物件名</th><td>[text* bukken]</td></tr>
+<tr><th scope="row">物件住所</th><td>[text* bukken-jusho]</td></tr>
+<tr><th scope="row">最寄り駅1</th><td>[text* station01]</td></tr><tr><th scope="row">最寄り駅2</th><td>[text station02]</td></tr><tr><th scope="row">物件種別</th><td>[radio syubetsu use_label_element "賃貸マンション" "賃貸アパート" "賃貸一戸建て" "寮・下宿" "コーポ" "ハイツ" "事務所" "店舗・事務所" "店舗（建物一部）" "店舗（建物全部）" "倉庫" "その他"]</td></tr>
+<tr><th scope="row">公開・非公開</th><td>[radio koukai use_label_element "公開" "非公開"]</td></tr>
+<tr><th scope="row">総戸数</th><td>[text soukosuu]</td></tr>
+<tr><th scope="row">空き戸数</th><td>[text akikosuu]</td></tr><tr><th scope="row">部屋番号</th><td>[text room]</td></tr><tr><th scope="row">部屋階数</th><td>[text kai]</td></tr><tr><th scope="row">専有面積
+</th><td>[text menseki]</td></tr><tr><th scope="row">間取り部屋 <span class="hissu">(必須)</span></th><td>[text* madori]<br />例：2LDKなど</td></tr><tr><th scope="row">間取り備考</th><td>[textarea madori-bikou]</td></tr><tr><th scope="row">賃料・価格 <span class="hissu">(必須)</span></th><td>[text* price]</td></tr><tr><th scope="row">共益費・管理費</th><td>[text kanri]</td></tr><tr><th scope="row">礼金</th><td>[text reikin]</td></tr><tr><th scope="row">敷金</th><td>[text shikikin]</td></tr><tr><th scope="row">更新料</th><td>[text koushin]</td></tr><tr><th scope="row">住宅保険料</th><td>[text hoken]</td></tr><tr><th scope="row">修繕積立費</th><td>[text shuzen]</td></tr><tr><th scope="row">駐車場空き</th><td>[radio chusha-aki use_label_element "有り" "無し"]</td></tr><tr><th scope="row">駐車料金</th><td>[text chusha]</td></tr><tr><th scope="row">駐車場備考</th><td>[textarea chusha-bikou]</td></tr><tr><th scope="row">現状</th><td>[radio genjou use_label_element "居住中" "空家" "未完成"]</td></tr><tr><th scope="row">取引態様</th><td>[radio taikei use_label_element "売主/貸主" "代理" "専属" "専任" "一般" "仲介" "その他"]</td></tr><tr><th scope="row">条件設備</th><td>[checkbox setsubi "楽器相談可" "楽器不可" "事務所可" "事務所不可" "２人入居可" "２人入居不可" "男性限定" "女性限定" "単身者限定" "単身者希望" "単身者不可" "法人限定" "法人希望" "法人不可" "学生限定" "学生歓迎" "高齢者限定" "高齢者歓迎" "子供可能" "キッズルーム" "ペット対応" "ペット可能" "ペット不可" "公庫利用可" "手付金保証有" "定期借家権" "保証付住宅" "保証人要" "保証人不要" "特定優良賃貸住宅" "家賃保障付" "角部屋" "角地" "建築条件付" "建築条件無" "分譲賃貸" "住宅性能保証付" "マンスリー可	" "未入居" "リノベーション" "ルームシェア・ハウス" "ガスコンロ" "電気コンロ" "IHコンロ" "一口コンロ" "二口コンロ" "三口コンロ" "四口以上コンロ" "システムキッチン" "カウンターキッチン" "ごみ出し24時間OK" "食器洗い乾燥機	" "ディスポーザー	" "冷蔵庫" "給湯" "追い焚き" "洗髪洗面化粧台" "独立洗面台	" "バス専用" "バス共同" "バスなし" "シャワー" "浴室乾燥機" "ユニットバス" "浴室TV		" "浴室1.6x2.0m以上" "トイレ専用" "トイレ共同" "トイレなし" "バス・トイレ別" "温水洗浄便座" "冷房" "暖房" "石油暖房" "エアコン" "床暖房" "トランクルーム" "床下収納" "W.INクローゼット" "ロフト付き" "室内洗濯機置き場" "洗濯機置き場有" "CATV" "CSアンテナ" "BSアンテナ" "有線放送" "高速インターネット" "光ファイバー" "地デジ対応" "インターネット利用料無料" "CATV利用料無料		" "インターネット有" "オートロック" "TVドアホン" "セキュリティシステム" "防犯カメラ		" "カードキーシステム" "都市ガス" "プロパンガス" "その他ガス" "公営水道" "井戸" "その他水道" "排水下水" "排水浄化槽" "排水汲取" "排水その他" "エレベータ" "宅配ボックス" "駐車場有" "駐輪場" "バイク置き場" "専用庭" "出窓" "バルコニー" "フローリング" "タイル貼り" "フリーアクセス" "二世帯住宅" "バリアフリー" "デザイナーズ" "オール電化" "満室賃貸中" "外断熱	" "耐震構造" "免震構造" "制震構造" "自由設計対応" "住宅性能評価書" "フロントサービス" "家具・家電付" "敷金礼金0"]</td></tr>
+<tr><th scope="row">設備その他</th><td>[textarea setsubi-etc]</td></tr><tr><th scope="row">画像1<br />
+(500KBまで)</th><td>[file file01 limit:500000 filetypes:jpg|png|gif]</td></tr><tr><th scope="row">画像2</th><td>[file file02 limit:500000 filetypes:jpg|png|gif]</td></tr><tr><th scope="row">画像3</th><td>[file file03 limit:500000 filetypes:jpg|png|gif]</td></tr><tr>
+<th scope="row">その他</th>
+<td>[textarea your-message]</td>
+</tr>
+</table>
+<p>[submit "送信"]</p>

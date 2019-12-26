@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.login h1 {
+text-align:center;
+}
+.login h1 a {
+background-image: url(screenshot.png);
+background-size: auto;
+background-repeat: no-repeat;
+height: 280px;
+width: 280px;
+}
